@@ -66,8 +66,6 @@ public class RevengePlanService {
         repo.deleteById(id);
     }
 
-    /* ================= Mapping inline (Entity → Response DTO) ================= */
-
     private ResponseRevengePlanDTO toResponse(RevengePlan e) {
         return ResponseRevengePlanDTO.builder()
                 .id(e.getId())
